@@ -3,7 +3,6 @@ body {
   font-family: sans-serif;
   display: flex;
   align-items: center;
-  /*height: 80/vh;*/
   justify-content: center;
   flex-direction: column;
 }
@@ -13,14 +12,14 @@ h1 {
 }
 
 h1.shaded {
-  text-shadow: 2px 2px 4px #333;
+  /*text-shadow: 2px 2px 4px #333;*/
 }
 
 h1:hover {
   color: #ddd;
   font-size: 500%;
-  transition: color 1s linear, font-size 1s ease-in;
-}
+  transition: color 1s linear, font-size 2s ease-in;
+ }
 
 a {
   text-decoration: none;
@@ -39,7 +38,7 @@ main {
 }
 
 .button {
-  border-radius: 50%;
+  /*border-radius: 50%;*/
   height: 100px;
   width: 100px;
   display: flex;
@@ -61,7 +60,7 @@ main {
 }
 
 .prettify {
-  border-radius: 10px;
+  border-radius: 50%;
 }
 
 .blur {
@@ -71,9 +70,9 @@ main {
 }
 
 .blur:hover {
-  -webkit-filter: blur(0);
-  -moz-filter: blur(0);
-  filter: blur(0);
+  -webkit-filter: blur(0) contrast(300%);
+  -moz-filter: blur(0) contrast(300%);
+  filter: blur(0) contrast(300%);
   transition: filter 1s ease-out;
 }
 
